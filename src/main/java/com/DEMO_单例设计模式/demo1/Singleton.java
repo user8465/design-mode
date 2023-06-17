@@ -9,5 +9,8 @@ package com.DEMO_单例设计模式.demo1;
  * @Version 1.0
  */
 public class Singleton {
-
+    /**
+     * 私有方法
+     */
+ private Singleton(){}
 }
