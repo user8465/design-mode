@@ -9,4 +9,6 @@ package com.结构型模式.DEMO_代理模式.jdk_proxy;
  **/
 public interface SellTickets {
     void  sell();
+
+    void vip();
 }

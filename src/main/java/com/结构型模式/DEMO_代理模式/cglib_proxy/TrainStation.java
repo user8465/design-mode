@@ -1,4 +1,6 @@
-package com.结构型模式.DEMO_代理模式.jdk_proxy;
+package com.结构型模式.DEMO_代理模式.cglib_proxy;
+
+import com.结构型模式.DEMO_代理模式.jdk_proxy.SellTickets;
 
 /**
  * @program: design-mode

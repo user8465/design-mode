@@ -11,6 +11,10 @@ public class test {
     public static void main(String[] args) {
         SellProxyFactory sellProxyFactory = new SellProxyFactory();
         SellTickets sellTickets = sellProxyFactory.getSellTickets();
-        sellTickets.sell();
+        sellTickets.vip();
+
+
+
+
     }
 }

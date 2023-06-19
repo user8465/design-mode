@@ -27,8 +27,25 @@ public class SellProxyFactory {
                 new InvocationHandler() {
                     @Override
                     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                        System.out.println(method.getName());
                         Object invoke = method.invoke(station, args);
                         System.out.println("请支付100元");
+                        return invoke;
+                    }
+                }
+        );
+        return sellTickets;
+    }
+
+    public  SellTickets getVipTickets(){
+        SellTickets sellTickets =(SellTickets) Proxy.newProxyInstance(
+                station.getClass().getClassLoader(),
+                station.getClass().getInterfaces(),
+                new InvocationHandler() {
+                    @Override
+                    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                        Object invoke = method.invoke(station, args);
+                        System.out.println("vip请支付300元");
                         return invoke;
                     }
                 }
