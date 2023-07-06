@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
  * @program: design-mode
  * @author: 8465
  * @createTime: 2023-07-06 17:21
- * @description: todo
+ * @description: 学生类
  * @Version: 1.0
  **/
 @Data
@@ -16,5 +16,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Student {
     String name;
-    String number;
+    int number;
 }
