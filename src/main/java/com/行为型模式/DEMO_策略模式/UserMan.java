@@ -19,4 +19,6 @@ public class UserMan {
     public void userUtil(){
         strategy.userUtil();
     }
+
+
 }
