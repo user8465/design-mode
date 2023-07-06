@@ -12,7 +12,6 @@ public class MoBikeBuilder extends Builder{
     @Override
     public void buildFrame() {
         bike.setFrame("钢铁");
-
     }
 
     @Override

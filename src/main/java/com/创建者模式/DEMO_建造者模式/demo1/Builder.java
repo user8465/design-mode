@@ -15,7 +15,6 @@ import com.创建者模式.DEMO_建造者模式.demo1.Bike;
 
     public abstract void buildFrame();
     public abstract void buildSeat();
-
     public abstract Bike creatBike();
 
 }

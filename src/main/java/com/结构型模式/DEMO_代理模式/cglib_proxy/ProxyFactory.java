@@ -30,6 +30,7 @@ public class ProxyFactory implements MethodInterceptor {
             args ： 实际参数
             methodProxy ：代理对象中的方法的method实例
      */
+    @Override
     public TrainStation intercept(Object o, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {
         System.out.println("代理点收取一些服务费用(CGLIB动态代理方式)");
         TrainStation result = (TrainStation) methodProxy.invokeSuper(o, args);
